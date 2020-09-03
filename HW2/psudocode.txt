@@ -1,0 +1,93 @@
+public class Company{
+	public string name;
+	public Address headquarters;
+	public Employee[] employee;
+	public Customer[] customer;
+	public VehicleRentalService service;
+	public Truck[] truck;
+	public Car[] car;
+	public Motorbike[] motorbike;
+}
+
+public abstract class Person{
+	public string name;
+	public string email;
+	public Address address;
+}
+
+public class Employee extends Person{
+}
+
+public class Customer extends Person{
+	public BankAccount bankAccount;
+}
+
+public class Subcontractor extends Employee, Person{
+}
+
+public class Address{
+	public string name;
+	public string postalCode;
+	public string city;
+}
+
+public class BankAccount{
+	public int number;
+	public string depositor;
+	public string bank;
+}
+
+public abstract class Service{
+	public Customer customer;
+}
+
+public class VehicleRentalService extends Service{
+	public Vehicle vehicle;
+	
+	public void offerCar(){}
+	public void offerMotorbike(){}
+	public void offerTruck(){}
+}
+
+public interface Rentable{
+	public void rent();
+}
+
+public abstract class Vehicle implements Rentable{
+
+	public abstract void rent(); // push implementation to subclasses
+
+}
+
+public class Truck extends Vehicle{
+	public int weight;
+	public int power;
+	public string manufacturer;
+	public string regNo;
+
+	public void rent(){}
+
+}
+
+public class Car extends Vehicle{
+	public CarKind kind;
+	public int noSeats;
+	public int power;
+	public string manufacturer;
+	public string regNo;
+
+	public void rent(){}
+}
+
+public class Motorbike extends Vehicle{
+	public MbKind kind;
+	public int cylinderCap;
+	public int power;
+	public string manufacturer;
+	public string regNo;
+
+	public void rent(){}
+}
+
+
+
