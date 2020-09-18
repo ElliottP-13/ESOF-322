@@ -1,0 +1,2 @@
+public class Inventory3 {
+}
