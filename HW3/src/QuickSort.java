@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Random;
 
@@ -11,13 +12,13 @@ public class QuickSort implements Algorithm{
         Collections.addAll(l, arr);
 
         l = quickSort(l);
-        E[] blankArr = (E[]) new Object[l.size()];
+        E[] blankArr = Arrays.copyOf(arr, arr.length);
 
         return l.toArray(blankArr);
     }
 
     private <E extends Comparable<E>> ArrayList<E> quickSort(ArrayList<E> list){
-        if(list.size() == 1)
+        if(list.size() <= 1)
             return list;
 
         ArrayList<E> l = new ArrayList<>();

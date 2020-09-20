@@ -11,7 +11,7 @@ public class BogoSort implements Algorithm{
             arr = shuffle(arr);
         }
 
-        return null;
+        return arr;
     }
 
     private <E extends Comparable<E>> E[] shuffle(E[] arr){
@@ -20,9 +20,9 @@ public class BogoSort implements Algorithm{
         Random rand = new Random();
         for (int i = result.length - 1; i > 0; i--) { //Fisher-Yates Shuffle
             index = rand.nextInt(i + 1);
-            E temp = arr[index];
-            arr[index] = arr[i];
-            arr[i] = temp;
+            E temp = result[index];
+            result[index] = result[i];
+            result[i] = temp;
         }
         return result;
     }

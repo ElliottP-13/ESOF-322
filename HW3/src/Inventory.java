@@ -3,7 +3,7 @@ public class Inventory {
     Integer[] objects;
 
     public void sort(){
-        sAlg.sort(objects);
+        objects = sAlg.sort(objects);
     }
 
     public void setSortStrategy(Algorithm a){
