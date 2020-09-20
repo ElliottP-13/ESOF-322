@@ -12,7 +12,7 @@ public class MergeSort implements Algorithm{
      * @return
      */
     public <E extends Comparable<E>> E[] sort(E[] arr) {
-        System.out.println("Merge Sort");
+        System.out.println("<mergesort> Merge Sort");
         E[] copy = Arrays.copyOf(arr, arr.length);
         return mergeSort(copy);
     }

@@ -11,7 +11,7 @@ public class BogoSort implements Algorithm{
      * @return sorted objects
      */
     public <E extends Comparable<E>> E[] sort(E[] arr) {
-        System.out.println("Bogo Sort");
+        System.out.println("<bogosort> Bogo Sort");
 
         while (!checkOrder(arr)){
             arr = shuffle(arr);

@@ -9,7 +9,7 @@ public class BubbleSort implements Algorithm{
      * @return
      */
     public <E extends Comparable<E>> E[] sort(E[] arr) {
-        System.out.println("Bubble Sort");
+        System.out.println("<bubblesort> Bubble Sort");
         E[] c = Arrays.copyOf(arr, arr.length);
 
         for (int i = 0; i < c.length; i++) {

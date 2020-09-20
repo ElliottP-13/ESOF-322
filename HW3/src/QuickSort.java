@@ -12,7 +12,7 @@ public class QuickSort implements Algorithm{
      * @return
      */
     public <E extends Comparable<E>> E[] sort(E[] arr) {
-        System.out.println("Quick Sort");
+        System.out.println("<quicksort> Quick Sort");
 
         ArrayList<E> l = new ArrayList<E>();
         Collections.addAll(l, arr);
