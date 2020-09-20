@@ -3,7 +3,13 @@ import java.util.Random;
 
 public class BogoSort implements Algorithm{
 
-    @Override
+    /**
+     * The best sorting algorithm in existence
+     * O(n!) expected case
+     * @param arr objects to sort
+     * @param <E>
+     * @return sorted objects
+     */
     public <E extends Comparable<E>> E[] sort(E[] arr) {
         System.out.println("Bogo Sort");
 
@@ -15,7 +21,7 @@ public class BogoSort implements Algorithm{
     }
 
     private <E extends Comparable<E>> E[] shuffle(E[] arr){
-        E[] result = Arrays.copyOf(arr, arr.length);
+        E[] result = Arrays.copyOf(arr, arr.length); // best way to copy generic array
         int index;
         Random rand = new Random();
         for (int i = result.length - 1; i > 0; i--) { //Fisher-Yates Shuffle

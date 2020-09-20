@@ -1,7 +1,13 @@
 import java.util.Arrays;
 
 public class BubbleSort implements Algorithm{
-    @Override
+    /**
+     * Basic bubble sort implementation
+     * O(n^2)
+     * @param arr
+     * @param <E>
+     * @return
+     */
     public <E extends Comparable<E>> E[] sort(E[] arr) {
         System.out.println("Bubble Sort");
         E[] c = Arrays.copyOf(arr, arr.length);
@@ -12,6 +18,8 @@ public class BubbleSort implements Algorithm{
                     E temp = c[j];
                     c[j] = c[j+1];
                     c[j+1] = temp;
+                } else{ // speed it up slightly
+                    break;
                 }
             }
         }

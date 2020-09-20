@@ -4,7 +4,13 @@ import java.util.Collections;
 import java.util.Random;
 
 public class QuickSort implements Algorithm{
-    @Override
+    /**
+     * Quicksort algorithm
+     * O(nlogn)
+     * @param arr
+     * @param <E>
+     * @return
+     */
     public <E extends Comparable<E>> E[] sort(E[] arr) {
         System.out.println("Quick Sort");
 
@@ -12,11 +18,17 @@ public class QuickSort implements Algorithm{
         Collections.addAll(l, arr);
 
         l = quickSort(l);
-        E[] blankArr = Arrays.copyOf(arr, arr.length);
+        E[] blankArr = Arrays.copyOf(arr, arr.length); //make E[] to give to list.toArray
 
         return l.toArray(blankArr);
     }
 
+    /**
+     * Recursive quicksort operations
+     * @param list
+     * @param <E>
+     * @return
+     */
     private <E extends Comparable<E>> ArrayList<E> quickSort(ArrayList<E> list){
         if(list.size() <= 1)
             return list;
