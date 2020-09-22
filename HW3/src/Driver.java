@@ -1,5 +1,10 @@
 import java.util.Arrays;
 
+/**
+ * Compile and run this class
+ * Required in same working directory:
+ * Algorithm.java, BogoSort.java, BubbleSort.java, Inventory.java, Inventory1.java, Inventory2.java, Mergesort.java, QuickSort.java
+ */
 public class Driver {
     public static void main(String[] args) {
         System.out.println("Convention: <class>- where print originates from");

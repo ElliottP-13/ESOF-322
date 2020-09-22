@@ -18,8 +18,6 @@ public class BubbleSort implements Algorithm{
                     E temp = c[j];
                     c[j] = c[j+1];
                     c[j+1] = temp;
-                } else{ // speed it up slightly
-                    break;
                 }
             }
         }
