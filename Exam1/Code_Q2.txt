@@ -1,0 +1,18 @@
+// In UML book 5.1.2.1 it gives example 5-3 of code for an Association Class
+// So this is copied from the book
+
+public class Account {
+    private String name;
+    private Category[] categories;
+    private DiaryEntry[] entries;
+}
+
+
+public class Category {
+    private String name;
+}
+
+public class DiaryEntry {
+    private String name;
+    private Category[] categories;
+}
