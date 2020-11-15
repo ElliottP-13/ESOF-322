@@ -1,0 +1,66 @@
+Found 16 files that possibly contain design patterns.
+
+D:\pryor\Downloads\gamebay_chess_src_0.7\net.sf.gamebay\src-impl\net\sf\gamebay\chess\play\condition
+		\impl\my\ConditionFactoryMyImpl.java
+Possible patterns: Factory
+
+D:\pryor\Downloads\gamebay_chess_src_0.7\net.sf.gamebay\src-impl\net\sf\gamebay\chess\play
+		\impl\my\PlayFactoryMyImpl.java
+Possible patterns: Factory
+
+D:\pryor\Downloads\gamebay_chess_src_0.7\net.sf.gamebay\src-impl\net\sf\gamebay\chess\play
+		\moving\impl\my\MovingFactoryMyImpl.java
+Possible patterns: Factory
+
+D:\pryor\Downloads\gamebay_chess_src_0.7\net.sf.gamebay\src-impl\net\sf\gamebay\chess\play
+		\turn\impl\my\TurnFactoryMyImpl.java
+Possible patterns: Factory
+
+D:\pryor\Downloads\gamebay_chess_src_0.7\net.sf.gamebay\src-impl\net\sf\gamebay\game\config
+		\player\impl\my\PlayerFactoryMyImpl.java
+Possible patterns: Factory
+
+D:\pryor\Downloads\gamebay_chess_src_0.7\net.sf.gamebay\src-impl\net\sf\gamebay\game\play
+		\action\impl\my\ActionFactoryMyImpl.java
+Possible patterns: Factory
+
+D:\pryor\Downloads\gamebay_chess_src_0.7\net.sf.gamebay\src-impl\net\sf\gamebay\game\play
+		\board\impl\my\BoardFactoryMyImpl.java
+Possible patterns: Factory
+
+D:\pryor\Downloads\gamebay_chess_src_0.7\net.sf.gamebay\src-impl\net\sf\gamebay\game\play
+		\condition\impl\my\ConditionFactoryMyImpl.java
+Possible patterns: Factory
+
+D:\pryor\Downloads\gamebay_chess_src_0.7\net.sf.gamebay\src-impl\net\sf\gamebay\game\play
+		\figure\impl\my\FigureFactoryMyImpl.java
+Possible patterns: Factory
+
+D:\pryor\Downloads\gamebay_chess_src_0.7\net.sf.gamebay\src-impl\net\sf\gamebay\game\play
+		\impl\my\PlayFactoryMyImpl.java
+Possible patterns: Factory
+
+D:\pryor\Downloads\gamebay_chess_src_0.7\net.sf.gamebay\src-impl\net\sf\gamebay\game\play
+		\moving\impl\my\MovingFactoryMyImpl.java
+Possible patterns: Factory
+
+D:\pryor\Downloads\gamebay_chess_src_0.7\net.sf.gamebay\src-impl\net\sf\gamebay\game\play
+		\moving\rule\impl\my\RuleFactoryMyImpl.java
+Possible patterns: Factory
+
+D:\pryor\Downloads\gamebay_chess_src_0.7\net.sf.gamebay\src-impl\net\sf\gamebay\game\play
+		\player\impl\my\PlayerFactoryMyImpl.java
+Possible patterns: Factory
+
+D:\pryor\Downloads\gamebay_chess_src_0.7\net.sf.gamebay\src-impl\net\sf\gamebay\game\play
+		\position\impl\my\OccupationStateFasteningBrokerMyImpl.java
+Possible patterns: State
+
+D:\pryor\Downloads\gamebay_chess_src_0.7\net.sf.gamebay\src-impl\net\sf\gamebay\game\play
+		\position\impl\my\PositionFactoryMyImpl.java
+Possible patterns: Factory
+
+D:\pryor\Downloads\gamebay_chess_src_0.7\net.sf.gamebay\src-impl\net\sf\gamebay\game\play
+		\turn\impl\my\TurnFactoryMyImpl.java
+Possible patterns: Factory
+
