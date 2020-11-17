@@ -51,10 +51,23 @@ It is built on one back-end system so that all processes can have high quality s
 \problem{2}
 \begin{figure}[H]
     \centering
-    \includegraphics[width = \linewidth]{./p2_component.png}
+    \includegraphics[width = 0.8\linewidth]{./p2_component.png}
     \caption{Component diagram}
     \label{fig:component}
 \end{figure}
+
+At the top level we have the user interaction systems. 
+The display component is the centralized system that compiles the relevant information for Mobile and Web to use in their displays.
+They take this information through the disp interface and use it to create their unique interaction. 
+This is designed so it can be expanded to more platforms easily. 
+The display component collects information from the business to customer and business to business components as well as the overall marketing strategy to curate content. 
+It also provides UI interface which is the user input from the end display, such as credentials in login, or searchbar, or clicks/taps. 
+The B2C and B2B components handle all the processes related to business to customer and business to business relations. 
+They provide interfaces to share this information with Display or other components. Security provides one backend for secure processes. 
+It uses the UI to gather login credentials and verify against customers (cust). 
+It authenticates logins and can use order history or other methods for fraud detection or credit checking for B2B operations. 
+Inventory provides a set of objects that we are selling, and also methods for logging transactions and order histories. 
+Marketing is its own component. It is designed to give a uniform marketing strategy to be deployed across the company to strengthen overall ad/marketing campaigns. 
 
 \newpage
 \problem{3}
